@@ -1,0 +1,138 @@
+*{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('img/pexels-tima-miroshnichenko-7991303.jpg') center center/cover no-repeat fixed;
+    background-color: #f2f2f2;
+    color: white;
+    margin: 0;
+    padding: 0; 
+  }
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(104, 104, 104, 0.377);
+  border-radius: 5px;
+}
+ /* style for search section */
+#searchPage{
+  text-align: center;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+ .button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+ .button:hover {
+    background: darkred;
+    color: white;
+ }
+ 
+ /* style for result section */
+ #resultsPage {
+  display: none;
+ }
+
+ #moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .movie {
+  width: 30%;
+  margin-bottom: 20px;
+  border: 2px solid #f3d9d9;
+  border-radius: 10px ;
+  overflow: hidden;
+ }
+
+ .movie img {
+  width: 100%;
+  height: auto;
+ }
+
+ .movie h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+ }
+
+ .movie p {
+  margin: 0;
+  padding: 0 10px 10px;
+  font-size: 14px;
+  color: rgb(235, 234, 234);
+ }
+
+ /* pagination link style */
+#pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px ;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#pagination a:hover {
+  background-color: darkred;
+}
+
+/*  *Media query for small screens like tab */
+@media (max-width: 600px) {
+  /* result page */
+  .movie {
+    width: 100%;
+    margin: 4px;
+  }
+  .movie img{
+    height: 50%;
+  }
+  .movie h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .movie p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Movie Monolith</title>
+  </head>
+  <body>
+    <header>
+      <h1>Movie Monolith</h1>
+    </header>
+    <main>
+      <!-- Search page -->
+      <section id="searchPage">
+        <h2>Search for Movies</h2>
+
+        <input
+          type="search"
+          placeholder="Search movies here"
+          id="searchInput"
+        />
+
+        <button id="searchButton" class="button">Search</button>
+      </section>
+      <section id="resultsPage">
+        <h2>Search Results</h2>
+        <div id="moviesList"></div>
+        <div id="pagination"></div>
+        <button id="home" class="button">Home</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
